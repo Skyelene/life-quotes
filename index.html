@@ -5,20 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <title>Life Quote Generator</title>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to the AI Quote Generator</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Welcome to the AI Quote Generator</h1>
+    </header>
 
-  <main>
-    <form>
-      <input type="text" placeholder="Enter your Life Quote topic..." autofocus required autocomplete="off">
-      <input type="submit">
-
-      <div>
+    <main>
+      <form>
+        <input type="text" placeholder="Enter your Life Quote topic..." autofocus required autocomplete="off"
+          class="instructions">
+        <input type="submit" class="button">
+      </form>
+      <div class="Quote">
         “Sing like no one’s listening,
         <br>
         love like you’ve never been hurt,
@@ -27,14 +34,13 @@
         <br>
         and live like it’s heaven on earth.”
       </div>
+    </main>
 
-    </form>
-  </main>
+    <footer>This AI Project was created by <a href="https://github.com/Skyelene" target="_blank">Rachel Buday,</a> is
+      open sourced on <a href="https://github.com/Skyelene/life-quotes" target="-blank">Github</a> & hosted on <a
+        href="https://ai-life-quote-generator.netlify.app/" target="_blank">Netlify.</a></footer>
 
-  <footer>This AI Project was created by <a href="https://github.com/Skyelene" target="_blank">Rachel Buday,</a> is
-    open sourced on <a href="https://github.com/Skyelene/life-quotes" target="-blank">Github</a> & hosted on <a
-      href="https://ai-life-quote-generator.netlify.app/" target="_blank">Netlify.</a></footer>
-
+  </div>
   <script src="src/index.js"></script>
 </body>
 
