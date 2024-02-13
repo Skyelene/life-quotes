@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <title>Life Quote Generator</title>
 </head>
 
@@ -20,19 +21,12 @@
     </header>
 
     <main>
-      <form>
+      <form id="quote-generator-form">
         <input type="text" placeholder="Enter your Life Quote topic..." autofocus required autocomplete="off"
           class="instructions">
         <input type="submit" class="button">
       </form>
-      <div class="Quote">
-        “Sing like no one’s listening,
-        <br>
-        love like you’ve never been hurt,
-        <br>
-        dance like nobody’s watching,
-        <br>
-        and live like it’s heaven on earth.”
+      <div class="quote" id="quote">
       </div>
     </main>
 
