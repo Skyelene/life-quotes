@@ -1,6 +1,4 @@
 function displayQuote(response) {
-  console.log("Quote Generated.");
-
   new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,9 +17,9 @@ function generateQuote(event) {
   let prompt = `User instructions: Generate a life quote about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("Generating Quote...");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="blink"> ⏳ Generating your quote about ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayQuote);
 }
